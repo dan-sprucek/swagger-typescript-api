@@ -648,9 +648,7 @@ class SchemaRoutes {
       contentKind,
       schema,
       type: content,
-      required:
-        requestBody &&
-        (typeof requestBody.required === 'undefined' || !!requestBody.required),
+      required: requestBody && !!requestBody.required,
     };
   };
 
